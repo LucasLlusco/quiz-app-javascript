@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="title" class="hidden">Quiz App</h1>
+            <div class="spinner-container" id="loader">
+                <div class="spinner">
+                    <i class="fas fa-spinner"></i>
+                </div>
+            </div>
+            <div class="content hidden" id="game">
+                <div class="hud">
+                    <div class="hud-item">
+                        <span>Score</span>
+                        <span id="score" >0</span>
+                    </div>
+                    <div class="hud-item">
+                        <div class="time-container">
+                            <span>Time Left</span> 
+                            <span id="timeText"></span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="question" id="question"></h2>
+                <div class="container-grid">
+                    <div class="choice-container">
+                        <span>A</span>
+                        <span class="choice" data-number="1"></span>
+                    </div>
+                    <div class="choice-container">
+                        <span>B</span>
+                        <span class="choice" data-number="2"></span>
+                    </div>
+                    <div class="choice-container">
+                        <span>C</span>
+                        <span class="choice" data-number="3"></span>
+                    </div>
+                    <div class="choice-container">
+                        <span>D</span>
+                        <span class="choice" data-number="4"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/game.js"></script>
+</body>
+</html>
